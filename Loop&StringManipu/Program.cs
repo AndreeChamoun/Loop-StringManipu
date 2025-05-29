@@ -64,7 +64,7 @@ class Program
                 case 2:
                     Console.Write("Hur många personer? ");
                     bool validPeople = int.TryParse(Console.ReadLine(), out int people); // Input för antal personer    
-                    if (!validPeople || people <= 0)
+                    if (!validPeople || people <= 0) // Kontrollerar om input är ett giltigt heltal och större än 0. !ValidPeople kontrollerar om det inte är giltigt.
                     {
                         Console.WriteLine("Fel: Ange ett giltigt antal personer.");
                         Console.WriteLine("Tryck på valfri knapp för att fortsätta");
